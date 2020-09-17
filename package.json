@@ -23,6 +23,7 @@
   },
   "scripts": {
     "prestart": "npm run build && npm install",
+    "build": "cd ./web npm run build",
     "start": "ts-node src/server.ts",
     "grunt": "grunt",
     "postinstall": "grunt",
