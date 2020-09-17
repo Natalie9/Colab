@@ -8,10 +8,10 @@ app.use(cors())
 app.use(express.json())
 app.use(routes)
 
-app.use('/', express.static('../../web/build/'))
+app.use('/', express.static('./../web/build/'))
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join('../../web/build/', 'index.html'))
+  res.sendFile('./../web/build/index.html', { root: __dirname });
 })
 
 export default app
