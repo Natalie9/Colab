@@ -1,0 +1,107 @@
+#page-landing {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-text-title);
+}
+
+.logo-container img {
+  width: 20rem;
+}
+
+.logo-img {
+  width: 100%;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+  /* font-size: 2.4rem; */
+  margin-top: 1.6rem;
+  color: var(--color-text-title);
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+}
+
+.buttons-container a {
+  width: 30rem;
+  height: 8rem;
+  border-radius: 0.8rem;
+
+  font: 700 1.6rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--color-button-text);
+
+  transition: background-color 1s;
+}
+
+.buttons-container a.register {
+  margin-right: 1.6rem;
+  background-color: var(--color-secundary-dark);
+}
+.buttons-container a.search {
+  background-color: var(--color-primary-dark);
+}
+
+.buttons-container a.register:hover {
+  background-color: var(--color-secundary);
+}
+.buttons-container a.search:hover {
+  background-color: var(--color-primary);
+}
+
+.total-connections {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1100px) {
+  #page-landing-content {
+    max-width: 100%;
+
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'logo buttons '
+      'logo total';
+  }
+  .logo-container {
+    /* background: red; */
+    grid-area: logo;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .logo-container h2{
+    font-size: 3.6rem;
+  }
+  .logo-container img {
+    width: 40rem;
+  }
+
+  .buttons-container {
+    grid-area: buttons;
+    display: flex;
+    align-items: flex-end;
+  }
+  .buttons-container a {
+    width: 25rem;
+    font-size: 2.4rem;
+  }
+  .total-connections {
+    grid-area: total;
+  }
+}

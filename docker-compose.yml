@@ -1,0 +1,27 @@
+version: '3'
+    
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=colab
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - .:/code
+    ports:
+      - "5433:5432"
+
+  
+  db_mysql:
+    image: mysql
+    restart: always
+    environment:
+       MYSQL_ROOT_PASSWORD: 'ipelabufg2020'
+       MYSQL_DATABASE: 'colab'
+       MYSQL_USER: 'ipelab'
+       MYSQL_PASSWORD: 'ipelabufg2020'
+    ports:
+      - "3307:3306"
+    volumes:
+      - .:/code

@@ -1,0 +1,39 @@
+#page-contact-list {
+  width: 100vw;
+  height: 100vh;
+}
+
+#search-contacts label {
+  color: var(--color-text-in-primary);
+}
+
+
+@media (min-width: 700px) {
+  #page-contact-list {
+    max-width: 100%;
+  }
+  #search-contacts {
+    display: grid;
+    width: 100%;
+    column-gap: 16px;
+    position: absolute;
+    bottom: -28px;
+  }
+  #search-contacts .input-block + .input-block,
+  #search-contacts .select-block + .select-block {
+    margin-top: 0;
+  }
+  #page-contact-list main {
+    padding: 3.2rem 0;
+    max-width: 740px;
+    margin: 0 auto;
+  }
+  
+}
+
+#page-contact-list main {
+  margin: 3.2rem auto;
+  width: 90%;
+}
+
+
