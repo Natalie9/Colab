@@ -5,7 +5,7 @@ export class CreateConnections1598550774145 implements MigrationInterface {
     await queryRunner.query(`
         CREATE TABLE IF NOT EXISTS connection(
             id INTEGER PRIMARY KEY AUTO_INCREMENT,
-            contactId bigint(20) unsigned NOT NULL,
+            contactId INTEGER NOT NULL,
             FOREIGN KEY (contactId) REFERENCES contact (id) ON DELETE CASCADE ON UPDATE CASCADE,
             created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
         );`)
