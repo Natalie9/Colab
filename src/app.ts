@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json())
 app.use(routes)
 const caminho = path.join(__dirname.split('\\src')[0],'/web/build/');
-
+console.log(__dirname)
 app.use('/', express.static('/usr/web/build'));
 
 app.get('/', (req, res) => {
