@@ -13,7 +13,7 @@ const name = __dirname.split('/')
 console.log({caminho});
 console.log({__dirname})
 console.log({name})
-app.use('/', express.static(caminho));
+app.use('/', express.static('usr/web/build'));
 
 // app.get('/', (req, res) => {
 //   res.sendFile(path.join(__dirname, './../web/build/', 'index.html'))
