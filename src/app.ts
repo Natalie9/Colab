@@ -7,8 +7,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 app.use(routes)
-
-app.use('/', express.static('./web/build/'))
+const meeerda = path.join(__dirname.split('\\src')[0],'/web/build/');
+console.log({meeerda});
+app.use('/', express.static(meeerda));
 
 // app.get('/', (req, res) => {
 //   res.sendFile(path.join(__dirname, './../web/build/', 'index.html'))
