@@ -11,8 +11,8 @@ const caminho = path.join(__dirname.split('\\src')[0],'/web/build/');
 
 app.use('/', express.static('/usr/web/build'));
 
-// app.get('/', (req, res) => {
-//   res.sendFile(path.join(__dirname, './../web/build/', 'index.html'))
-// })
+app.get('/', (req, res) => {
+  res.sendFile('/usr/web/build/index.html')
+})
 
 export default app
