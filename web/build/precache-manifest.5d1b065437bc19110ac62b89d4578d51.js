@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "36f22ea8e3b8a0857c66046d0676ff26",
+    "revision": "1664adf82418af16cf16a9aa6d49df2b",
     "url": "/index.html"
   },
   {
-    "revision": "eb825e6223e5c24ebb04",
+    "revision": "f18be57b99e2777ce8be",
     "url": "/static/css/main.60c4d045.chunk.css"
   },
   {
@@ -16,19 +16,19 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.fd7d28b5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "eb825e6223e5c24ebb04",
-    "url": "/static/js/main.d8df5271.chunk.js"
+    "revision": "f18be57b99e2777ce8be",
+    "url": "/static/js/main.d6e5a20b.chunk.js"
   },
   {
     "revision": "9d56b0ea2705241215be",
     "url": "/static/js/runtime-main.cf8c75f0.js"
   },
   {
-    "revision": "710c395a3a7f3a3bde20844f481ddf9e",
-    "url": "/static/media/Logo_IPElab.710c395a.png"
+    "revision": "9020f232a00dc8487713896fc7bbdcc1",
+    "url": "/static/media/Logo_IPElab.9020f232.png"
   },
   {
-    "revision": "243fcdd64a2fa20fdc8edaac62a3baeb",
-    "url": "/static/media/logo.243fcdd6.png"
+    "revision": "fa6a6db9fe4872f9987c6300db7df476",
+    "url": "/static/media/logo.fa6a6db9.png"
   }
 ]);
