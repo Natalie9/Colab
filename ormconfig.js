@@ -1,8 +1,7 @@
 
 module.exports = {
    "type": process.env.DB_TYPE || "mysql",
-   "host": process.env.DB_HOST || "localhost",
-   "port": process.env.DB_PORT || 3607,
+   "host": process.env.DB_HOST || "mysql669.umbler.com",
    "username": process.env.DB_USERNAME || "ipelab",
    "password": process.env.DB_PASSWORD || "postgres",
    "database": process.env.DB_NAME || "colab",
