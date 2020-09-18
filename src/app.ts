@@ -10,10 +10,10 @@ app.use(routes)
 const caminho = path.join(__dirname.split('\\src')[0],'/web/build/');
 console.log({caminho})
 console.log(__dirname)
-app.use('/', express.static('/usr/src/app/web/build'));
+app.use('/', express.static(caminho));
 
-app.get('/', (req, res) => {
-  res.sendFile('/usr/src/app/web/build/index.html')
+app.get('*', (req, res) => {
+  res.sendFile(caminho)
 })
 
 export default app
