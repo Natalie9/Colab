@@ -87,6 +87,7 @@ const ContactRegister = () => {
               label='Descrição'
               placeholder='Fale um pouco sobre você'
               value={description}
+              maxLength={250}
               onChange={(e) => {
                 setDescription(e.target.value)
               }}
