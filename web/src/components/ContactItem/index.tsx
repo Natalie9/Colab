@@ -46,7 +46,7 @@ const ContactItem: React.FC<ContactItemProps> = ({ contact }) => {
         <p onClick={() => handleConnection(contact.id)}>
           Email:
           <strong>
-            <a href='mailto: {contact.email}'>{contact.email}</a>
+            <a href={'mailto:' + contact.email}>{contact.email}</a>
           </strong>
         </p>
         <button onClick={() => handleConnection(contact.id)}>
