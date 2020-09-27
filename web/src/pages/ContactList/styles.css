@@ -1,6 +1,10 @@
 #page-contact-list {
   width: 100vw;
   height: 100vh;
+ 
+}
+#page-contact-list .page-header{
+  background-color: var(--color-primary-dark);
 }
 
 #search-contacts label {

@@ -6,14 +6,21 @@
   justify-content: center;
   align-items: center;
   color: var(--color-text-title);
+  --color-background: #36CFE1;
+
 }
 
+html, body{
+  --color-background: #36CFE1;
+}
 .logo-container img {
   width: 20rem;
 }
 
 .logo-img {
   width: 100%;
+  filter: drop-shadow(2px 1px 0 black) 
+  drop-shadow(-1px -1px 0 white);
 }
 
 .logo-container {
@@ -68,7 +75,7 @@
   justify-content: center;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
   #page-landing-content {
     max-width: 100%;
 

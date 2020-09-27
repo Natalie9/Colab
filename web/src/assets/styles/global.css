@@ -1,15 +1,15 @@
 :root {
-  --color-background: #f0f0f7;
+  --color-background: #36CFE1;
   /* --color-primary-lighter: #9871F5; */
-  --color-primary-light: #5858ff;
+  --color-primary-light: #793380;
 
-  --color-primary: #3535f5;
-  --color-primary-dark: #19199b;
+  --color-primary: #6A2C70;
+  --color-primary-dark: #612866;
 
   /* --color-primary-darker: #6842C2; */
-  --color-secundary-light: #fff212;
-  --color-secundary: #face4a;
-  --color-secundary-dark: #f3c235;
+  --color-secundary-light: #faee6c;
+  --color-secundary: #F9ED69;
+  --color-secundary-dark: #faeb4b;
 
   --color-title-in-primary: #ffffff;
   --color-text-in-primary: #d4c2ff;
@@ -44,13 +44,21 @@ html,
 }
 
 body {
-  background: var(--color-background);
+   background: #f0f0f7; 
 }
 
 #root {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+a:-webkit-any-link{
+  font-style: none;
+  color: var(--color-background);
+  text-decoration: none;
+  
+
 }
 
 /* define font */

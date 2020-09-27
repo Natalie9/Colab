@@ -1,6 +1,11 @@
+ #page-contact-register .page-header{
+  background-color: var(--color-secundary);
+}
+
 #page-contact-register {
   width: 100vw;
   height: 100vh;
+ 
 }
 
 #page-contact-register .page-header .header-content {
